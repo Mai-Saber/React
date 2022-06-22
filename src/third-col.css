@@ -1,0 +1,79 @@
+.third-section {
+  color: rgb(230, 223, 223);
+}
+
+.second-section-address,
+.third-section-address {
+  color: rgb(223, 162, 9);
+  margin-bottom: 2rem;
+}
+.third-section-address .icon {
+  float: right;
+}
+
+.third-section .content {
+  border: 1px solid rgb(49, 43, 6);
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+.third-section .content .flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.third-section .Gold {
+  color: white;
+  font-weight: bold;
+  padding: 0 0.2rem;
+}
+
+.available-active {
+  color: rgb(228, 168, 15);
+  font-size: 1.5rem;
+}
+
+.white-active {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.yellow-col {
+  color: rgb(139, 104, 15);
+  font-size: 1rem;
+  font-weight: bold;
+}
+/*////*/
+.third-section .boxes div {
+  border: 1px solid rgb(49, 43, 6);
+  border-radius: 5px;
+  margin-top: 0.8rem;
+  padding: 1.1rem;
+  height: 3rem;
+}
+.third-section .boxes div p {
+  position: relative;
+  bottom: 0.5rem;
+}
+.second-section .boxes span,
+.third-section .boxes span {
+  float: right;
+}
+
+/*////////////////*/
+/* additional option */
+body button:hover {
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+@keyframes animation {
+  from {
+    background-color: rgb(54, 54, 153);
+    position: relative;
+    bottom: 0;
+  }
+  to {
+    background-color: blue;
+    bottom: 1rem;
+  }
+}
