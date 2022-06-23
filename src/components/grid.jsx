@@ -7,7 +7,7 @@ class Grid extends Component {
   render() {
     return (
       <div>
-        <div className="row  justify-content-between align-items-center">
+        <div className="row  justify-content-between">
           <div className="col-sm-12 col-lg-4 ">
             <FirstSection />
           </div>
