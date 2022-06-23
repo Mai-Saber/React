@@ -39,14 +39,14 @@
 }
 .yellow-col {
   color: rgb(139, 104, 15);
-  font-size: 1rem;
+  font-size: 1Prem;
   font-weight: bold;
 }
 /*////*/
 .third-section .boxes div {
   border: 1px solid rgb(49, 43, 6);
   border-radius: 5px;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   padding: 1.1rem;
   height: 3rem;
 }
@@ -77,3 +77,5 @@ body button:hover {
     bottom: 1rem;
   }
 }
+/*////////////////////////////*/
+/* media query"Responsive" in APP.css */

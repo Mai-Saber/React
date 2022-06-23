@@ -1,24 +1,25 @@
 import Dropdown from "../common/drop down";
 import React, { Component } from "react";
-import Button from '../common/button';
-import Box from "../common/boxes";
+import Button from "../common/button";
+import Box from "../common/box";
 
 class secondSection extends Component {
   state = {
+    goldOptions: ["Gold 18", "Gold 20", "Gold 24"],
+    orderTypeOptions: ["Ring", "Necklace", "Bracelet"],
     prices: {
-      price: "10 EGP"
+      price: "10 EGP",
     },
   };
 
-  // handleReset = () => {
-  //   const newCost = { ...this.state.prices };
-  //   let m = newCost.price;
-  //      //m = 0
-  //   this.setState({prices:newCost})
-    
-  // };
+  handleReset = () => {
+    const newCost = { ...this.state.prices };
+    newCost.price = "0 EGP ";
+    this.setState({ prices: newCost });
+  };
 
   render() {
+    const { goldOptions, orderTypeOptions } = this.state;
     return (
       <section className="second-section">
         <div className="section-content">
@@ -35,9 +36,9 @@ class secondSection extends Component {
                 class="dorp-down"
                 name="gold"
                 main="Gold"
-                firstOption="Gold 18"
-                secondOption="Gold 21"
-                thirdOption="Gold 24"
+                firstOption={goldOptions[0]}
+                secondOption={goldOptions[1]}
+                thirdOption={goldOptions[2]}
               />
             </Box>
 
@@ -52,9 +53,9 @@ class secondSection extends Component {
                   class="dorp-down"
                   name="Order Type"
                   main="Order Type"
-                  firstOption="Ring"
-                  secondOption="Necklace"
-                  thirdOption="Bracelet"
+                  firstOption={orderTypeOptions[0]}
+                  secondOption={orderTypeOptions[1]}
+                  thirdOption={orderTypeOptions[2]}
                 />
               </div>
               <Box content="price limit " span={this.state.prices.price} />
@@ -66,7 +67,11 @@ class secondSection extends Component {
           </div>
 
           <Box class="reset-preview">
-            <Button name="btn" content="Reset" onClick={this.handleReset} />
+            <Button
+              name="btn"
+              content="Reset"
+              onClick={() => this.handleReset()}
+            />
             <Button name="btn" content="Preview" />
           </Box>
         </div>

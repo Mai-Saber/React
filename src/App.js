@@ -1,20 +1,15 @@
-import './App.css';
-import Grid from './components/grid';
-import React, { Component } from 'react';
-
-
+import "./App.css";
+import Grid from "./components/grid";
+import React, { Component } from "react";
 
 class App extends Component {
-  
-  
-  render() { 
+  render() {
     return (
       <React.Fragment>
         <Grid />
-        </React.Fragment>
+      </React.Fragment>
     );
   }
 }
- 
-export default App;
 
+export default App;

@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import Image from "../common/image";
 import Dropdown from "../common/drop down";
-import Flex from "../common/flex";
-
+import GoldPrices from "../common/GoldPrices";
 
 class firstSection extends Component {
   state = {
-    URL: "./chart 2.png",
+    options: ["saturday", "sunday", "tuesday"],
   };
 
   render() {
+    const { options } = this.state;
     return (
       <React.Fragment>
         <section className="first-section">
@@ -25,25 +25,32 @@ class firstSection extends Component {
             </div>
 
             <div className="content">
-              <Flex
-                class="flex"
-                h4Class="gold"
-                h4Content="Gold"
-                middleFirstPClass="green"
-                middleFirstPContent="Buy"
-                middleSecondPClass="red"
-                middleSecondPContent="Sell"
-                middleThirdPContent="Daily change"
-                middleFourthPContent="Daily change %"
-                finalFirstPClass="green set-position"
-                finalSecondPClass="red set-position"
-                finalFirstPContent="EGP 980.00"
-                finalSecondPContent="EGP 970.00"
-                finalThirdPContent="EGP 5.0"
-                finalFourthPContent="0.1 %"
-              />
-                    
-                    
+              <GoldPrices class="flex" h4Class="gold" tittle="Gold">
+                <div>
+                  <p class="green">Buy</p>
+                  <p class="red">Sell</p>
+                  <p>Daily change</p>
+                  <p>Daily change %</p>
+                </div>
+
+                <div>
+                  <p class="green set-position">
+                    <span>
+                      <i class="fa fa-caret-up"></i>
+                    </span>
+                    EGP 980.00
+                  </p>
+                  <p class="red set-position">
+                    <span>
+                      <i class="fa fa-caret-down"></i>
+                    </span>
+                    EGP 970.00
+                  </p>
+                  <p>EGP 5.0</p>
+                  <p>0.1 %</p>
+                </div>
+              </GoldPrices>
+
               <span className="right-note">
                 daily change- difference from day before
               </span>
@@ -60,15 +67,15 @@ class firstSection extends Component {
                 </span>
               </span>
             </b>
-            <Image />
+            <Image class="img" />
 
             <Dropdown
               class="day"
               name="day"
               main="Day"
-              firstOption="saturday"
-              secondOption="sunday"
-              thirdOption="tuesday"
+              firstOption={options[0]}
+              secondOption={options[1]}
+              thirdOption={options[2]}
             />
           </div>
         </section>

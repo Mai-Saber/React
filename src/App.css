@@ -1,4 +1,36 @@
-body{
-    background-color: black !important;
-     padding: 20px;
+body {
+  background-color: black !important;
+  padding: 20px;
+}
+
+@media (min-width: 1rem) and (max-width: 80rem) {
+  .upper-div .address b,
+  .lower-div b {
+    font-size: 1.5rem;
+  }
+  .first-section .content {
+    margin-top: 50px;
+  }
+
+  .img {
+    width: 100%;
+  }
+  .second-section .buy-sell button {
+    width: 100%;
+  }
+  .second-section .boxes .quantity {
+    padding-top: 10px;
+    font-size: 0.9rem;
+  }
+  .second-section .boxes .flex-box div {
+    width: 48%;
+    font-size: 0.8rem;
+  }
+  .second-section .order-value {
+    font-size: 0.8rem;
+  }
+  .third-section .boxes .div p,
+  .third-section .boxes .div span {
+    font-size: 0.8rem;
+  }
 }
