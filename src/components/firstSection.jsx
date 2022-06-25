@@ -10,6 +10,7 @@ class firstSection extends Component {
 
   render() {
     const { options } = this.state;
+    const { firstValue, secondValue, onDecrement, onIncrement } = this.props;
     return (
       <React.Fragment>
         <section className="first-section">
@@ -25,26 +26,26 @@ class firstSection extends Component {
             </div>
 
             <div className="content">
-              <GoldPrices class="flex" h4Class="gold" tittle="Gold">
+              <GoldPrices className="flex" h4Class="gold" tittle="Gold">
                 <div>
-                  <p class="green">Buy</p>
-                  <p class="red">Sell</p>
+                  <p className="green">Buy</p>
+                  <p className="red">Sell</p>
                   <p>Daily change</p>
                   <p>Daily change %</p>
                 </div>
 
                 <div>
-                  <p class="green set-position">
-                    <span>
-                      <i class="fa fa-caret-up"></i>
+                  <p className="green set-position green-set">
+                    <span onClick={onIncrement}>
+                      <i className="fa fa-caret-up"></i>
                     </span>
-                    EGP 980.00
+                    EGP {firstValue}
                   </p>
-                  <p class="red set-position">
-                    <span>
-                      <i class="fa fa-caret-down"></i>
+                  <p className="red set-position red-set">
+                    <span onClick={onDecrement}>
+                      <i className="fa fa-caret-down"></i>
                     </span>
-                    EGP 970.00
+                    EGP {secondValue}
                   </p>
                   <p>EGP 5.0</p>
                   <p>0.1 %</p>
@@ -67,10 +68,11 @@ class firstSection extends Component {
                 </span>
               </span>
             </b>
-            <Image class="img" />
+
+            <Image className="img" />
 
             <Dropdown
-              class="day"
+              className="day"
               name="day"
               main="Day"
               firstOption={options[0]}

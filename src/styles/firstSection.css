@@ -20,7 +20,8 @@
 }
 .upper-div .address .market-status .icon {
   position: relative;
-  top: 0.2rem;
+  top: 0.2em;
+  left: 0.2rem;
   font-size: 1rem;
 }
 /*///////*/
@@ -32,13 +33,16 @@
 }
 .first-section .content .flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 2rem ;
 }
 
 .first-section .gold {
   color: white;
-  padding-right: 2rem;
+  background-color: black;
+  border: 0px solid transparent;
+  font-size: 2rem;
+
 }
 
 .first-section .content .green {
@@ -52,10 +56,24 @@
 .first-section .content .flex .set-position {
   position: relative;
   right: 0.8rem;
+  
+}
+.first-section .content .flex .green-set span{
+  position: relative;
+  bottom: 0.2rem;
+  color: rgb(25, 235, 53);
+  
+}
+.first-section .content .flex .red-set span{
+  position: relative;
+  top: 0.1rem;
+  
+  
 }
 .first-section .content .flex .set-position span {
   position: relative;
   right: 0.5rem;
+  
 }
 
 .right-note {
@@ -69,9 +87,8 @@
 /*/ /////////*/
 .lower-div .gold .icon {
   position: relative;
-  top: 0.2rem;
   left: 0.2rem;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 .lower-div .img {

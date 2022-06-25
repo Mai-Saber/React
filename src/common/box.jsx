@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 class Box extends Component {
   render() {
-    const { content, span, children } = this.props;
+    const { content, span, children, className } = this.props;
     return (
-      <div className={this.props.class}>
+      <div className={className}>
         {content}
         <span>{span}</span>
         {children}

@@ -7,7 +7,7 @@ class ThirdSection extends Component {
   render() {
     return (
       <section className="third-section">
-        <Box class="section-content">
+        <Box className="section-content">
           <h3 className="third-section-address">
             Account Balance
             <span className="icon">
@@ -16,16 +16,16 @@ class ThirdSection extends Component {
           </h3>
 
           <div className="content">
-            <GoldPrices class="flex" h4Class="gold" tittle="Gold Balance">
+            <GoldPrices className="flex" h4Class="gold" tittle="Gold Balance">
               <div>
-                <p class="available-active">Available</p>
-                <p class="yellow-col">Withdrawal</p>
-                <p class="yellow-col">Total</p>
-                <p class="yellow-col">Value</p>
+                <p className="available-active">Available</p>
+                <p className="yellow-col">Withdrawal</p>
+                <p className="yellow-col">Total</p>
+                <p className="yellow-col">Value</p>
               </div>
 
               <div>
-                <p class="white-active">1350 gm</p>
+                <p className="white-active">1350 gm</p>
                 <p>EGP 92.257.00</p>
                 <p>100 gm</p>
                 <p>10 gm</p>
@@ -33,19 +33,19 @@ class ThirdSection extends Component {
             </GoldPrices>
           </div>
 
-          <Box class="boxes">
-            <Box class="div">
+          <Box className="boxes">
+            <Box className="div">
               <p>
                 Cash Balance
                 <span className="white-active"> EGP 100.000.00</span>
               </p>
             </Box>
-            <Box class="div">
+            <Box className="div">
               <p>
                 Un Realized P\L <span> EGP 950.024.00</span>
               </p>
             </Box>
-            <Box class="div">
+            <Box className="div">
               <p>
                 Funds in Withdrawal <span> EGP 950.024.00</span>
               </p>

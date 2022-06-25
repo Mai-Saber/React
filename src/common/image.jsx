@@ -5,10 +5,12 @@ class Image extends Component {
     url: "../../chart 2.png",
   };
   render() {
+    const {url} =this.state
+    const {className} =this.props
     return (
       <img
-        src={this.state.url}
-        className={this.props.class}
+        src={url}
+        className={className}
         alt="there is a chart here"
       />
     );

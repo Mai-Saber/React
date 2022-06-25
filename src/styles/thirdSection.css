@@ -6,6 +6,8 @@
 .third-section-address {
   color: rgb(223, 162, 9);
   margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .third-section-address .icon {
   float: right;
@@ -18,7 +20,7 @@
 }
 .third-section .content .flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .third-section .Gold {
@@ -43,39 +45,21 @@
   font-weight: bold;
 }
 /*////*/
+
 .third-section .boxes div {
   border: 1px solid rgb(49, 43, 6);
   border-radius: 5px;
-  margin-top: 1rem;
-  padding: 1.1rem;
-  height: 3rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
 }
 .third-section .boxes div p {
   position: relative;
-  bottom: 0.5rem;
+  top: 0.5rem;
 }
 .second-section .boxes span,
 .third-section .boxes span {
   float: right;
 }
 
-/*////////////////*/
-/* additional option */
-body button:hover {
-  animation-name: animation;
-  animation-duration: 2s;
-  animation-direction: alternate;
-}
-@keyframes animation {
-  from {
-    background-color: rgb(54, 54, 153);
-    position: relative;
-    bottom: 0;
-  }
-  to {
-    background-color: blue;
-    bottom: 1rem;
-  }
-}
-/*////////////////////////////*/
-/* media query"Responsive" in APP.css */
+/*/ ///////////////////////////*/
+/* media query "Responsive" in APP.css */

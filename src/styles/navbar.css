@@ -1,0 +1,14 @@
+.navbar {
+  background-color: black;
+  display: flex;
+}
+
+.navbar div {
+  justify-content: center;
+}
+.navbar-nav li {
+  margin-right: 6rem;
+}
+.active{
+  background-color: gold;
+}
